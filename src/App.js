@@ -2,8 +2,8 @@ import { ChakraProvider } from "@chakra-ui/react";
 import Header from "./components/Header";
 import LandingSection from "./components/LandingSection";
 import Home from "./routes/Home";
-import ProjectsSection from "./routes/ProjectsSection";
-import ContactMeSection from "./routes/ContactMeSection";
+
+import SignUpSection from "./routes/SignUpSection";
 import Footer from "./components/Footer";
 import { AlertProvider } from "./context/alertContext";
 import Alert from "./components/Alert";
@@ -18,7 +18,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
 
-            <Route path="/contactme" element={<ContactMeSection />} />
+            <Route path="/signup" element={<SignUpSection />} />
           </Routes>
           <Footer />
           <Alert />

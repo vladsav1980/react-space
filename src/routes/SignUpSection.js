@@ -20,7 +20,7 @@ import { useAlertContext } from "../context/alertContext";
 /**
  * Covers a complete form implementation using formik and yup for validation
  */
-const ContactMeSection = () => {
+const SignUpSection = () => {
   const { isLoading, response, submit } = useSubmit();
   const { onOpen } = useAlertContext();
 
@@ -56,11 +56,11 @@ const ContactMeSection = () => {
       py={16}
       spacing={8}
     >
-      <VStack w="1024px" p={16} alignItems="flex-start">
-        <Heading as="h1" id="contactme-section">
+      <VStack w="90%" alignItems="flex-start">
+        <Heading as="h1" id="signup-section">
           Start Your Journey into React Space
         </Heading>
-        <Box p={6} rounded="md" w="100%">
+        <Box py={6} rounded="md" w="90%">
           <form onSubmit={formik.handleSubmit}>
             <VStack spacing={4}>
               <FormControl
@@ -116,4 +116,4 @@ const ContactMeSection = () => {
   );
 };
 
-export default ContactMeSection;
+export default SignUpSection;
