@@ -60,7 +60,7 @@ const SignUpSection = () => {
         <Heading as="h1" id="signup-section">
           Start Your Journey into React Space
         </Heading>
-        <Box py={6} rounded="md" w="90%">
+        <Box py={6} px={1} rounded="md" w="90%">
           <form onSubmit={formik.handleSubmit}>
             <VStack spacing={4}>
               <FormControl
