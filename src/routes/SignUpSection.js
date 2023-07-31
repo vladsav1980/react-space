@@ -56,7 +56,7 @@ const SignUpSection = () => {
       py={16}
       spacing={8}
     >
-      <VStack w="100%" alignItems="flex-start">
+      <VStack w="90vw" alignItems="flex-start">
         <Heading as="h1" id="signup-section">
           Start Your Journey into React Space
         </Heading>
